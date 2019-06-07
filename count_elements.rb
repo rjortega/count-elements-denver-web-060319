@@ -1,4 +1,7 @@
 def count_elements(array)
-  # code goes here
+  array.each_with_object ({}) do |element, hash|
+    hash[element] == nil ? hash[element] = 1 : hash[element] += 1
+  end
 end
  
+
